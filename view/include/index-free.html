@@ -1,0 +1,21 @@
+<section class="channel-group">
+    <div class="channel-group__header">
+        <h2 class="channel-grounp__title">限时免费</h2>
+    </div>
+    <ul class="book-table" v-for='item in free' v-if='$index < 6'>
+        <li>
+            <div>
+                <div class="u-book">
+                    <div class="book-cover">
+                        <img :src="item.cover" alt="">
+                        <div class="u-tagRT -freefiction"></div>
+                    </div>
+                    <div class="info">
+                        <h3 class="title">{{item.title}}</h>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <a href="/free" class="channel-grounp__footer">更多限免佳作&gt;&gt;</a>
+</section>

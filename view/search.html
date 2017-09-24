@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name='format-detection' content='telephone=no'>
+    <link rel="stylesheet" href="/static/css/all.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/reset.css" type="text/css">
+    <title>搜索</title>
+</head>
+<style>
+    .datasearch {
+        width: calc(100% - 48px);
+        display: block;
+        border-radius: 4px;
+        border: 1px solid #eee;
+        height: 38px;
+        font-size: 12px;
+        color: #ccc;
+        line-height: 36px;
+        background: url(http://image.read.duokan.com/mfsv2/download/fdsc3/p01dSYLeWtSR/tY73MgTfVw7UAS.png) no-repeat 10px center;
+        background-size: 14px;
+        padding-left: 32px;
+        box-sizing: border-box;
+    }
+    
+    .search_wrap {
+        padding: 10px;
+        padding-top: 0px;
+    }
+</style>
+
+<body>
+    <div class="return">
+        <a href="/">返回书城</a>
+    </div>
+    <div id="app">
+        <div class="shelf__top" style="clear:both;margin-top: 45px;">
+            <div class="shelf__switch" v-on:click='doSearch()'></div>
+            <div class="search_wrap">
+                <input type='text' class="datasearch" id="search" placeholder="输入书名/作者/关键字" />
+            </div>
+        </div>
+
+</body>
+<script src="/static/script/vue.js"></script>
+<script src="/static/script/zepto.js"></script>
+<script src="/static/script/pages/search.js"></script>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/all.css">
+    <title>女生频道</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="return">
+        <a href="/">返回书城</a>
+    </div>
+    <section class="channel-h5 tomargin" id='app'>
+        <div class="channel-h5__header">
+            <p class="channel-h5__title">
+                女生频道
+            </p>
+        </div>
+        <div>
+            <div>
+                <ul class="list-h5">
+                    <li v-for='item in female'>
+                        <div class="book-h5">
+                            <div class="book-h5__cover">
+                                <img :src="item.cover" alt="">
+                                <p class="book-h5__finish"></p>
+                            </div>
+                            <div class="book-h5__info">
+                                <p class="book-h5__title">{{item.title}}</p>
+                                <p class="book-h5__author">{{item.author}}</p>
+                                <p class="book-h5__summary">{{item.summary}}</p>
+                                <div class="book-h5__wrap">
+                                    <div class="book-h5__tag" v-for='tag in item.tags'>{{tag}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="/static/script/vue.js"></script>
+<script src="/static/script/zepto.js"></script>
+<script src="/static/script/pages/female.js"></script>
+
+</html>
